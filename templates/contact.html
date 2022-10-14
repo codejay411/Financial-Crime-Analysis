@@ -1,0 +1,112 @@
+{% extends 'base.html' %}
+{% block title %}
+Contact
+{% endblock title %}
+
+{% block content %}
+ <!-- start page-title -->
+ <section class="page-title">
+    <div class="container">
+        <div class="row">
+            <div class="col col-xs-12">
+                <h2>Contact</h2>
+            </div>
+        </div> <!-- end row -->
+    </div> <!-- end container -->
+</section>        
+<!-- end page-title -->
+
+
+<!-- start contact-pg-section -->
+<section class="contact-pg-section section-padding">
+    <div class="container">
+        <div class="row">
+            <div class="col col-lg-5 col-md-6 col-sm-8">
+                <div class="section-title">
+                    <span>Contact With Us</span>
+                    <h2>Call Us Or Fill The Form</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col col-md-7">
+                <form method="post" class="contact-validation-active" id="contact-form-main">
+                    <div>
+                        <input type="text" class="form-control" name="name" id="name" placeholder="Name*">
+                    </div>
+                    <div>
+                        <input type="email" class="form-control" name="email" id="email" placeholder="Email*">
+                    </div>
+                    <div>
+                        <input type="text" class="form-control" name="phone" id="phone" placeholder="Phone*">
+                    </div>
+                    <div class="fullwidth">
+                        <textarea class="form-control" name="note"  id="note" placeholder="Case Description..."></textarea>
+                    </div>
+                    <div class="submit-area">
+                        <button type="submit" class="theme-btn">Submit Now</button>
+                        <div id="loader">
+                            <i class="ti-reload"></i>
+                        </div>
+                    </div>
+                    <div class="clearfix error-handling-messages">
+                        <div id="success">Thank you</div>
+                        <div id="error"> Error occurred while sending email. Please try again later. </div>
+                    </div>
+                </form>
+            </div>  
+
+            <div class="col col-md-5">
+                <div class="office-info">
+                    <div>
+                        <h3>Address</h3>
+                        <ul>
+                            <li><i class="ti-location-pin"></i> Vishwakarma nagar, jalalipatti, DLW, Varanasi</li>
+                            <li><i class="ti-mobile"></i> 8887624847</li>
+                            <li><i class="ti-email"></i> jaypr202@gmail.com</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>                  
+        </div>
+    </div> <!-- end container -->
+</section>
+<!-- end contact-pg-section -->
+
+
+<!--  start contact-map -->
+
+<!-- end contact-map -->
+
+
+<!-- start cta-section -->
+<section class="cta-section">
+    <div class="container">
+        <div class="row">
+            <div class="col col-lg-6 col-md-6">
+                <div class="cta-text">
+                    <h3>Lets Get in Touch!</h3>
+                    <p>Video conferencing is an online technology that allows users in different locations to hold face-to-face meetings without having to move to a single location together.</p>
+                </div>
+            </div>
+            <div class="col col-lg-5 col-lg-offset-1 col-md-6">
+                <div class="contact-info">
+                    <div>
+                        <i class="fi flaticon-call"></i>
+                        <h4>Call us</h4>
+                        <p>+918887624847</p>
+                    </div>
+                    <div>
+                        <i class="fi flaticon-contact"></i>
+                        <h4>Email us</h4>
+                        <p>jaypr202@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> <!-- end container -->
+</section>
+<!-- end cta-section -->
+{% endblock content %}
+
+
